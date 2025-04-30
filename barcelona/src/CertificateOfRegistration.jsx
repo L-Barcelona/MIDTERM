@@ -1,22 +1,12 @@
-/* eslint-disable no-unused-vars */
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-// import { jwtDecode } from "jwt-decode";
+
 import FreeTuitionImage from "./assets/FREETUITION.png";
 import EaristLogo from "./assets/EaristLogo.png";
 
 const CertificateOfRegistration = () => {
-  // const getEmployeeNumFromToken = () => {
-  //   const token = localStorage.getItem("token"); // Get token from localStorage
-  //   if (token) {
-  //     const decoded = jwtDecode(token);
-  //     console.log("Decoded Token: ", decoded);
-  //     return decoded.employeeNumber; // Get the employeeNumber
-  //   }
-  //   return null;
-  // };
-
-  // Store the employeeNumber in a new variable
+  
   const [data, setData] = useState([]);
   const [studentNumber, setStudentNumber] = useState("");
   const [registrationNumber, setRegistrationNumber] = useState("");
@@ -35,13 +25,7 @@ const CertificateOfRegistration = () => {
   const [yearLevel, setYearLevel] = useState("");
   const [curriculum, setCurriculum] = useState("");
   const [totalLecUnits, setTotalLecUnits] = useState("");
-
-  // Now filter after initializing the states
-  // const employeeNum = getEmployeeNumFromToken();
-
-  // const filteredData = data.filter(
-  //   (item) => String(item.employeeID) === String(employeeNum)
-  // );
+  
 
   useEffect(() => {
     const fetchItems = async () => {

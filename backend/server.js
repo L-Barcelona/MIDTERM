@@ -25,7 +25,7 @@ console.log("Connected to MySQL database");
 }
 });
 
-//Get COR info
+
 app.get("/api/cor", (req, res) => {
 let sql = "SELECT * FROM certificate_of_registration";
 db.query(sql, (err, results) => {
